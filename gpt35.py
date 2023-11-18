@@ -9,7 +9,8 @@ from json import dumps
 from dataset import get_data
 from itertools import chain
 
-with open(r"D:\Projects\AMIC AI Challenge\AI_CHALLENGE_sample\openai_api_key.txt", "r") as f:
+KEY_FILE= r"D:\Projects\AMIC AI Challenge\AI_CHALLENGE_sample\openai_api_key.txt"
+with open(KEY_FILE, "r") as f:
     KEY = f.readline()
 
 CLIENT = openai.OpenAI(api_key=KEY)
